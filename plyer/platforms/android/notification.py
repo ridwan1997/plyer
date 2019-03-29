@@ -158,7 +158,7 @@ class AndroidNotification(Notification):
         else:
             notification = notification.getNotification()
 
-        self._get_notification_service().notify(0, notification)
+        self._get_notification_service().notify(1, notification)
 
     def _notify(self, **kwargs):
         noti = None
