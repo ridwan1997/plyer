@@ -71,7 +71,7 @@ class AndroidNotification(Notification):
         app_channel = channel(
             self._channel_id, name, manager.IMPORTANCE_DEFAULT
         )
-        activity.getSystemService(manager).createNotificationChannel(
+        activity.getSystemService(Context.NOTIFICATION_SERVICE).createNotificationChannel(
             app_channel
         )
         return app_channel
